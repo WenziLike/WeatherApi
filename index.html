@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Api</title>
+    <link rel="shortcut icon" href="img/weatherfavico.ico">
+    <link rel="stylesheet" href="node_modules/modern-css-reset/dist/reset.min.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="wrap">
+            <div class="dropdown">
+                <select class="dropdown__countries" tabindex="2">
+                    <option>Country</option>
+                </select>
+                <select class="dropdown__cities" tabindex="3">
+                    <option>City</option>
+                </select>
+            </div>
+            <div class="initial__info">
+                <div class="weather">
+                    <h2 class="weather__city">Dnepr</h2>
+                    <p class="weather__info">Partly Cloud</p>
+                    <p class="weather__temp">23 <span>&#xB0;</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="location__search">
+            <div class="search">
+                <div class="search__city">
+                    <input type="text" id="search" class="search__location" tabindex="1"
+                        placeholder="Search or enter city name">
+                </div>
+            </div>
+        </div>
+        <div class="time-zone">
+            <h1>Timezone</h1>
+            <h2 class="now">11 am 10 june 2020</h2>
+        </div>
+        <div class="additional__info">
+            <div class="list">
+                <ul class="list__info">
+                    <li>SUNRISE <span class="sunrise">04:31</span></li>
+                    <li>SUNSET <span class="sunset">20:47</span></li>
+                    <li>CHANCE OF RAIN <span class="chance__rain">30</span>%</li>
+                    <li>HUMIDITY <span class="humidity">90</span>%</li>
+                    <li>WIND <span class="wind">NNE 6 </span>km/hr</li>
+                    <li>FEELS LIKE<span class="feelss__like"> 16&#xB0;</span></li>
+                    <li>PRECIPITTION <span class="precipittion">1,1</span>cm</li>
+                    <li>PRESSURE <span class="pressure">1006</span>hPa</li>
+                    <li>VISIBILITY <span class="visibility">145</span>m</li>
+                    <li>UV INDEX <span class="uv__index">0</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
