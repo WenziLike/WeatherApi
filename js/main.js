@@ -16,7 +16,7 @@ const Weather = function () {
     //===============================================================
     //! получил JSON file
     // const list = './data/countriesStatesCities.json';
-    const list = './data/geo.json';
+    const list = '../data/CountriesToCities.json';
 
     (async function () {
         const response = await fetch(list);
