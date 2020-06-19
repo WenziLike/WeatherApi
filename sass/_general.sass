@@ -1,41 +1,36 @@
 body
-    // background-color: #042d35
     background: url('../img/my.jpg')no-repeat 100% center/cover
-// ================================ стилизация селекта стран и городов
-
-select,input
-    display: block
-    max-width: 177px
-    border-radius: 6px
-    background-color: transparent
-    border: 1px solid
-    color: #ffffff83
-    outline: none
-    // border: none
-    // appearance: none // убирает стрелки на селектах
-    &:hover
-        border: 1px solid #ffffff
-        color: #ffffff
-        &::placeholder
-            color: #ffffff
 
 .container
     width: 1200px
     margin: 0 auto
+// ================================ выпадающий список стран и городов
+.block__dropdown
 
-.dropdown
-    display: inline-block
-    &__countries
-        margin-top: 35px
-    &__cities
-        margin: 10px 0 0 32px
+    .dropdown
+        display: inline-block
+        &__countries
+            margin-top: 35px
+        &__cities
+            margin: 10px 0 0 32px
         // display: none
-// ================================ стилизация погоды города и информации
-.wrap
-    display: flex
-    justify-content: space-between
-    align-items: center
+select
+    display: block
+    max-width: 177px
+    padding: 5px 10px
+    border-radius: 6px
+    background-color: #41484a
+    border: none
+    color: #ffffff
+    outline: none
+    // border: none
+    // appearance: none // убирает стрелки на селектах
+    &:hover
+        border: none
+        color: #4dee0d
+// ================================ стилизация погоды города и главной информации
 .initial__info
+    // display: none
     p
         margin-bottom: 0
     .weather
@@ -48,40 +43,21 @@ select,input
             padding-right: 140px
         &__temp
             font-size: 3em
-// ================================ стилизация поиска по названию города
-.search
-    padding-top: 60px
-    padding-bottom: 40px
-    &__city
-        display: flex
-        justify-content: center
-        align-items: center
-
-    &__location
-        min-width: 50%
-        padding: 4px 18px
-        border-radius: 6px
-        outline: none
-        border: 1px solid #ffffff83
-        font-size: 18px
-        &::placeholder
-            color: #ffffff83
-        // &:hover
-        //     border: 1px solid $WhiteColor
 
 // ================================ стилизация  тайм зони и времени и зоны
 .time-zone
     display: block
     text-align: center
+    display: none
 // ================================ стилизация  дополнительно информации о погоде
 .list
     padding-top: 100px
     margin: 0 auto
-    // display: none
+    display: none
     &__info
         display: grid
-        grid-template-columns: repeat(5,1fr) // 5 колонок
-        grid-template-rows: repeat(2,1fr)// 2 строки
+        grid-template-columns: repeat(5,1fr)
+        grid-template-rows: repeat(2,1fr)
         grid-auto-flow: column
         justify-items: center
     li

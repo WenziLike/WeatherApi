@@ -7,13 +7,16 @@
     <title>Weather Api</title>
     <link rel="shortcut icon" href="img/weatherfavico.ico">
     <link rel="stylesheet" href="node_modules/modern-css-reset/dist/reset.min.css">
-    <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/fonts-icon.css">
 </head>
 
 <body>
     <div class="container">
-        <div class="wrap">
+
+
+        <div class="block__dropdown">
             <div class="dropdown">
                 <select class="dropdown__countries" tabindex="2">
                     <option>Country</option>
@@ -22,19 +25,20 @@
                     <option>City</option>
                 </select>
             </div>
-            <div class="initial__info">
-                <div class="weather">
-                    <h2 class="weather__city">Dnepr</h2>
-                    <p class="weather__info">Partly Cloud</p>
-                    <p class="weather__temp">23 <span>&#xB0;</span></p>
-                </div>
+        </div>
+        <div class="initial__info">
+            <div class="weather">
+                <h2 class="weather__city">Dnepr</h2>
+                <p class="weather__info">Partly Cloud</p>
+                <p class="weather__temp">23 <span>&#xB0;</span></p>
             </div>
         </div>
-        <div class="location__search">
+        <div class="block__search">
             <div class="search">
-                <div class="search__city">
-                    <input type="text" id="search" class="search__location" tabindex="1"
+                <div class="search__location">
+                    <input type="text" id="search" class="search__city" tabindex="1"
                         placeholder="Search or enter city name">
+                    <span class="icon-search"></span>
                 </div>
             </div>
         </div>
