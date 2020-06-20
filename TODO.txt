@@ -1,2 +1,19 @@
 1 Сделать прозрачным поиск и кнопку 
 2 загрузить на гит
+
+
+var x = new Date();
+var currentTimeZoneOffsetInHours = x.getTimezoneOffset()
+
+
+
+ var selectElem = document.getElementById('select')
+    var pElem = document.getElementById('p')
+
+    // Когда выбран новый элемент <option>
+    selectElem.addEventListener('change', function () {
+        var index = selectElem.selectedIndex;
+        // Добавить данные в <p>
+        pElem.innerHTML = 'selectedIndex: ' + index;
+    })
+    функция для выбранного селекта  выбран город передаем значение  и получем погоду

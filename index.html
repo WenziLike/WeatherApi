@@ -14,15 +14,22 @@
 
 <body>
     <div class="container">
-
+        <div class="block__search">
+            <div class="search">
+                <div class="search__location">
+                    <input type="text" class="search__city" tabindex="1" placeholder="Search or enter city name">
+                    <span class="icon-search"></span>
+                </div>
+            </div>
+        </div>
 
         <div class="block__dropdown">
             <div class="dropdown">
                 <select class="dropdown__countries" tabindex="2">
-                    <option>Country</option>
+                    <option value="country" selected>Country</option>
                 </select>
                 <select class="dropdown__cities" tabindex="3">
-                    <option>City</option>
+                    <option value="city" selected>City</option>
                 </select>
             </div>
         </div>
@@ -30,16 +37,7 @@
             <div class="weather">
                 <h2 class="weather__city">Dnepr</h2>
                 <p class="weather__info">Partly Cloud</p>
-                <p class="weather__temp">23 <span>&#xB0;</span></p>
-            </div>
-        </div>
-        <div class="block__search">
-            <div class="search">
-                <div class="search__location">
-                    <input type="text" id="search" class="search__city" tabindex="1"
-                        placeholder="Search or enter city name">
-                    <span class="icon-search"></span>
-                </div>
+                <p class="weather__temp">27 <span>&#xB0;</span></p>
             </div>
         </div>
         <div class="time-zone">
@@ -49,7 +47,7 @@
         <div class="additional__info">
             <div class="list">
                 <ul class="list__info">
-                    <li>SUNRISE <span class="sunrise">04:31</span></li>
+                    <li>SUNRISE<span class="sunrise">04:31</span></li>
                     <li>SUNSET <span class="sunset">20:47</span></li>
                     <li>CHANCE OF RAIN <span class="chance__rain">30</span>%</li>
                     <li>HUMIDITY <span class="humidity">90</span>%</li>
@@ -62,8 +60,17 @@
                 </ul>
             </div>
         </div>
-    </div>
-    <script src="js/main.js"></script>
+        <!-- <p id="p">Индекс выбранного элемента: 0</p>
+
+        <select id="select">
+            <option selected>Option A</option>
+            <option>Option B</option>
+            <option>Option C</option>
+            <option>Option D</option>
+            <option>Option E</option>
+        </select>
+    </div> -->
+        <script src="js/main.js"></script>
 </body>
 
 </html>
