@@ -7,7 +7,7 @@
     <title>Weather Api</title>
     <link rel="shortcut icon" href="img/weatherfavico.ico">
     <link rel="stylesheet" href="node_modules/modern-css-reset/dist/reset.min.css">
-    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="css/general.min.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/fonts-icon.css">
 </head>
@@ -22,14 +22,11 @@
                 </div>
             </div>
         </div>
-
         <div class="block__dropdown">
             <div class="dropdown">
                 <select class="dropdown__countries" tabindex="2">
-                    <option value="country" selected>Country</option>
                 </select>
                 <select class="dropdown__cities" tabindex="3">
-                    <option value="city" selected>City</option>
                 </select>
             </div>
         </div>
@@ -60,17 +57,12 @@
                 </ul>
             </div>
         </div>
-        <!-- <p id="p">Индекс выбранного элемента: 0</p>
-
-        <select id="select">
-            <option selected>Option A</option>
-            <option>Option B</option>
-            <option>Option C</option>
-            <option>Option D</option>
-            <option>Option E</option>
-        </select>
-    </div> -->
-        <script src="js/main.js"></script>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="js/plugins/CountryAndCity.js"></script>
+    <script src="js/plugins/modalWindow.js"></script>
+    <script src="js/plugins/ApiWeather.js"></script>
+    <script src="js/general.js"></script>
 </body>
 
 </html>

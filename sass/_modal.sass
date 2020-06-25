@@ -1,0 +1,52 @@
+
+.modal
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background: #00000067
+    // display: none
+    &__window
+        display: block
+        margin: 50px auto
+        padding-bottom: 30px
+        width: 100%
+        max-width: 500px
+        border-radius: 4px
+        box-shadow: 3px 8px 14px -3px #000000
+        background: #41484aa8
+    &__header
+        span.modal__close
+            position: relative
+            margin-left: 94%
+            padding-right: 12px
+            font-size: 26px
+            cursor: pointer
+            color: $color-green
+            &:hover
+                color: $color-red
+    &__content
+        span.modal__text
+            display: flex
+            justify-content: center
+            align-items: center
+            padding: 20px
+            text-shadow: 3px 5px 3px #000000
+            font-weight: 700
+            font-size: 26px
+    &__footer
+        display: flex
+        justify-content: flex-end
+        button
+            padding: 20px 10px
+            font-size: 12px
+            background: transparent
+            border: none
+            outline: none
+            font-weight: 700
+            border-bottom: 1px solid #ffffff
+            &:focus
+                color: #e76d6d
+            &:last-child
+                padding-right: 31px

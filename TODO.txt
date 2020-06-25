@@ -17,3 +17,10 @@ var currentTimeZoneOffsetInHours = x.getTimezoneOffset()
         pElem.innerHTML = 'selectedIndex: ' + index;
     })
     функция для выбранного селекта  выбран город передаем значение  и получем погоду
+
+    //функция  для получения выбранного оптионс
+// let cityName = '';
+// citiesSelected.addEventListener('change', (event) => {
+//     console.log(event.target.value);
+//     cityName = this.value;
+// });

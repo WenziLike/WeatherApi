@@ -5,38 +5,15 @@ body
     width: 1200px
     margin: 0 auto
 // ================================ выпадающий список стран и городов
-.block__dropdown
-    .dropdown
-        display: inline-block
-        .dropdown__cities
-            // display: none
-            display: block
-            margin: 20px 0 0 120px
-        .active
-            display: inline-block
-
-select
-    display: inline-block
-    max-width: 177px
-    margin: 50px 0 0 32px
-    padding: 5px 10px
-    border-radius: 6px
-    background-color: #41484a
-    border: none
-    outline: none
-    &:hover
-        color: #4dee0d
 // ================================ стилизация погоды города и главной информации
 .initial__info
     text-align: center
-    // display: none
-    p
     .weather
         &__city
             font-size: 3rem
             font-weight: 400
         &__info
-            font-size: 1rem
+            font-size: 19px
         &__temp
             font-size: 6rem
             padding: 0 0 0 45px
@@ -50,7 +27,6 @@ select
 .list
     padding-top: 100px
     margin: 0 auto
-    // display: none
     &__info
         display: grid
         grid-template-columns: repeat(5,1fr)
